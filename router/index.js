@@ -10,12 +10,12 @@ const routes = [
     component: Home
   },
   {
-    path: '/test/educationlist',
+    path: '/test/education',
     name: 'Education',
     component: Education
   },
   {
-    path: '/test/landlist',
+    path: '/test/land',
     name: 'Land',
     component: Land
   },

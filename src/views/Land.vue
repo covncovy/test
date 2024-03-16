@@ -18,7 +18,7 @@
       onMounted(async () => {
         try {
           
-          const response = await fetch(`land.json`);
+          const response = await fetch(`lan.json`);
           const data = await response.json();
           jsonData.value = data;
   

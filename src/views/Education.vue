@@ -87,7 +87,7 @@ export default {
 
         onMounted(async () => {
             try {
-                const response = await fetch(`education.json`);
+                const response = await fetch(`edu.json`);
                 const data = await response.json();
 
                 if (Array.isArray(data.data)) {
