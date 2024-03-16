@@ -5,17 +5,17 @@ import Home from '@views/Home.vue';
 
 const routes = [
   {
-    path: '/',
+    path: '/test',
     name: 'Home',
     component: Home
   },
   {
-    path: '/education',
+    path: '/test/education',
     name: 'Education',
     component: Education
   },
   {
-    path: '/land',
+    path: '/test/land',
     name: 'Land',
     component: Land
   },

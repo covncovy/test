@@ -3,8 +3,8 @@
 
         <nav>
             <ul>
-                <router-link to="/education"><li>教育</li></router-link>
-                <router-link to="/land"><li>土地</li></router-link>
+                <router-link to="/test/education"><li>教育</li></router-link>
+                <router-link to="/test/land"><li>土地</li></router-link>
             </ul>
         </nav>
     </div>
