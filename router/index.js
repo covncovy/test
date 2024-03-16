@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import Education from '@views/Education.vue';
 import Land from '@views/Land.vue';
 import Home from '@views/Home.vue';
