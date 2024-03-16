@@ -7,17 +7,26 @@ const routes = [
   {
     path: '/test',
     name: 'Home',
-    component: Home
+    component: Home,
+    beforeEnter: (to, from, next) => {
+      next();
+    }
   },
   {
     path: '/test/education',
     name: 'Education',
-    component: Education
+    component: Education,
+    beforeEnter: (to, from, next) => {
+      next();
+    }
   },
   {
     path: '/test/land',
     name: 'Land',
-    component: Land
+    component: Land,
+    beforeEnter: (to, from, next) => {
+      next();
+    }
   },
  
 ];
