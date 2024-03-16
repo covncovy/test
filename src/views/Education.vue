@@ -87,7 +87,7 @@ export default {
 
         onMounted(async () => {
     try {
-        const response = await fetch('../../public/education.json');
+        const response = await fetch(`${window.location.origin}${process.env.VUE_APP_BASE_URL}education.json`);
         const data = await response.json();
 
         if (Array.isArray(data.data)) {

@@ -17,7 +17,7 @@
   
       onMounted(async () => {
         try {
-          const response = await fetch('../../public/land.json');
+          const response = await fetch(`${window.location.origin}${process.env.VUE_APP_BASE_URL}land.json`);
           const data = await response.json();
           jsonData.value = data;
   
