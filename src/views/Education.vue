@@ -87,12 +87,13 @@ export default {
 
         onMounted(async () => {
     try {
-        const response = await fetch(`education.json`);
+        const response = await fetch(`public/education.json`);
         const data = await response.json();
 
         if (Array.isArray(data.data)) {
             jsonData.value = data.data; 
             renderChart(); 
+            
         } else {
             console.error('JSON data is not in the expected format.');
         }
