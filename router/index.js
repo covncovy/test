@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Education from '../src/views/Education.vue';
-import Land from '../src/views/Land.vue';
-import Home from '../src/views/Home.vue';
+import Education from '@views/Education.vue';
+import Land from '@views/Land.vue';
+import Home from '@views/Home.vue';
 
 const routes = [
   {
