@@ -1,7 +1,8 @@
-# Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 分頁-土地
+fetch JSON檔後選用了chartjs的長條圖功能，展示了高雄各區的共有土地面積，可一眼看出各區面積的多寡以及最多與最少的對象。
 
-## Recommended IDE Setup
+## 分頁-教育
+因為先做好了長條圖覺得較簡易呈現，想挑戰看看圓餅圖，所以花了點功夫找適合的JSON檔，最後選中了臺南市國民中學原住民學生數的資料。資料來自於各個不同的國中，不同原住民族個別計算，所以為了最後呈現出總人數，先將各個國中的同一族群人數加起來，方便展示不同原住民族分別總共是幾人，又佔總人數幾%。
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
