@@ -4,8 +4,8 @@
         <nav>
             <ul>
                 <router-link to="/test">首頁</router-link>
-                <router-link to="/test/education"><li>教育</li></router-link>
-                <router-link to="/test/land"><li>土地</li></router-link>
+                <router-link to="/test/educationlist"><li>教育</li></router-link>
+                <router-link to="/test/landlist"><li>土地</li></router-link>
             </ul>
         </nav>
     </div>

@@ -86,22 +86,22 @@ export default {
         };
 
         onMounted(async () => {
-    try {
-        const response = await fetch(`education.json`);
-        const data = await response.json();
+            try {
+                const response = await fetch(`education.json`);
+                const data = await response.json();
 
-        if (Array.isArray(data.data)) {
-            jsonData.value = data.data; 
-            renderChart(); 
-            
-        } else {
-            console.error('JSON data is not in the expected format.');
-        }
+                if (Array.isArray(data.data)) {
+                    jsonData.value = data.data;
+                    renderChart();
 
-    } catch (error) {
-        console.error('Error fetching JSON data:', error);
-    }
-});
+                } else {
+                    console.error('JSON data is not in the expected format.');
+                }
+
+            } catch (error) {
+                console.error('Error fetching JSON data:', error);
+            }
+        });
 
 
         return {
@@ -111,4 +111,3 @@ export default {
     }
 };
 </script>
-
