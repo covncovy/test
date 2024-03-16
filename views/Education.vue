@@ -14,7 +14,6 @@ export default {
         const jsonData = ref([]);
 
         const renderChart = () => {
-            // 确保jsonData.value是一个数组
             if (!Array.isArray(jsonData.value)) {
                 console.error('jsonData.value is not an array.');
                 return;
@@ -22,12 +21,10 @@ export default {
 
             const ethnicGroups = ['太魯閣族', '布農族', '卑南族', '阿美族', '泰雅族', '排灣族', '鄒族', '魯凱族', '賽夏族', '賽德克族', '雅美族'];
 
-            // 计算总人数
             const total = jsonData.value.reduce((acc, school) => {
                 return acc + parseInt(school['總計']);
             }, 0);
 
-            // 提取并计算各族群的人数
             const ethnicData = ethnicGroups.map(ethnic => {
                 const count = jsonData.value.reduce((acc, school) => {
                     return acc + (parseInt(school[ethnic]) || 0);
@@ -93,10 +90,9 @@ export default {
         const response = await fetch('/public/education.json');
         const data = await response.json();
 
-        // 确保数据是有效的数组
         if (Array.isArray(data.data)) {
-            jsonData.value = data.data; // 修正这里的赋值
-            renderChart(); // 在数据加载完成后渲染图表
+            jsonData.value = data.data; 
+            renderChart(); 
         } else {
             console.error('JSON data is not in the expected format.');
         }
@@ -115,6 +111,3 @@ export default {
 };
 </script>
 
-<style>
-/* Add your CSS styles here */
-</style>
